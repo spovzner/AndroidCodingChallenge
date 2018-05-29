@@ -68,7 +68,6 @@ final class ListViewAdapter extends BaseAdapter {
         // Trigger the download of the URL asynchronously into the image view.
         builder.build()
                 .load(url)
-                .placeholder(R.drawable.placeholder)
                 .error(R.drawable.error)
                 .fit()
                 .tag(context)
