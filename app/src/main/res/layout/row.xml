@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/display_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Display Title">
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="210dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/display_title"
+        android:layout_alignLeft="@+id/display_title">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/publication_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:text="Released">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/publication_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/publication_date_title"
+        android:layout_alignLeft="@+id/publication_date_title">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/mpaa_rating_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/publication_date"
+        android:layout_alignLeft="@+id/publication_date"
+        android:text="MPAA Rating">
+    </TextView>
+
+    <TextView
+        android:id="@+id/mpaa_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/mpaa_rating_title"
+        android:layout_alignLeft="@+id/mpaa_rating_title">
+    </TextView>
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/image"
+        android:layout_alignLeft="@+id/image"
+        android:text="Headline"
+        android:textStyle="italic" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/byline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/headline"
+        android:layout_alignLeft="@+id/headline">
+    </TextView>
+
+    <TextView
+        android:id="@+id/summary_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/byline"
+        android:layout_alignLeft="@+id/byline">
+    </TextView>
+
+
+</RelativeLayout>
+
+
